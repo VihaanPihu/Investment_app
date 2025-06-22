@@ -13,7 +13,7 @@ class MF():
             f.write("\n")
 
     def readMF(self):
-        with open(r"/home/vihaan/coding/Investment_App/mf_list.txt","r") as f:
+        with open(r"mf_list.txt","r") as f:
             mf_list=f.readlines()
             return mf_list
         
