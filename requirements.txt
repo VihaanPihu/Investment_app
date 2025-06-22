@@ -6,6 +6,7 @@ mftool
 yfinance
 plotly
 fake_useragent
+matplotlib
 
 
 
