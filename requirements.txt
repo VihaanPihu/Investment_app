@@ -1,0 +1,12 @@
+streamlit
+pandas
+requests
+bs4
+mftool
+yfinance
+plotly
+fake_useragent
+
+
+
+
