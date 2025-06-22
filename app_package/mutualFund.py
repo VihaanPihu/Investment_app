@@ -6,17 +6,17 @@ mft=Mftool()
 class MF():
     def __init__(self):
         self.text=""
-        base_path = Path(__file__).resolve().parent
-        file_path = base_path / "mf_list.txt"
+        self.base_path = Path(__file__).resolve().parent
+        self.file_path = self.base_path / "mf_list.txt"
 
     def addMF(self,text):
         self.text=text
-        with open(file_path,"a") as f:
+        with open(self.file_path,"a") as f:
             f.write(self.text)
             f.write("\n")
 
     def readMF(self):
-        with open(file_path,"r") as f:
+        with open(self.file_path,"r") as f:
             mf_list=f.readlines()
             return mf_list
         
