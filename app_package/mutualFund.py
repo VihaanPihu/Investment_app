@@ -8,12 +8,12 @@ class MF():
 
     def addMF(self,text):
         self.text=text
-        with open("mf_list.txt","a") as f:
+        with open(r"mf_list.txt","a") as f:
             f.write(self.text)
             f.write("\n")
 
     def readMF(self):
-        with open("mf_list.txt","r") as f:
+        with open(r"mf_list.txt","r") as f:
             mf_list=f.readlines()
             return mf_list
         
