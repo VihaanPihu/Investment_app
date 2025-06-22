@@ -8,7 +8,7 @@ class MF():
 
     def addMF(self,text):
         self.text=text
-        with open(r"/home/vihaan/coding/Investment_App/mf_list.txt","a") as f:
+        with open(r"mf_list.txt","a") as f:
             f.write(self.text)
             f.write("\n")
 
