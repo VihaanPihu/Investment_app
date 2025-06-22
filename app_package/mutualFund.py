@@ -1,19 +1,22 @@
 from mftool import Mftool
 import pandas as pd
+from pathlib import Path
 mft=Mftool()
 
 class MF():
     def __init__(self):
         self.text=""
+        base_path = Path(__file__).resolve().parent
+        file_path = base_path / "mf_list.txt"
 
     def addMF(self,text):
         self.text=text
-        with open("mf_list.txt","a") as f:
+        with open(file_path,"a") as f:
             f.write(self.text)
             f.write("\n")
 
     def readMF(self):
-        with open("mf_list.txt","r") as f:
+        with open(file_path,"r") as f:
             mf_list=f.readlines()
             return mf_list
         
